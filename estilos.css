@@ -1,0 +1,475 @@
+
+}
+@media only screen and max-width: 980px;
+@media only screen and max-height: 600px;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	overflow-x: nowrap;
+
+
+
+}
+/* cor geral*/ 
+.gradient{
+	margin: auto;
+	width: 100vh;
+	height: 130vw;
+	background: linear-gradient(45deg, #ee8886,#668844,#114466,#884443);
+	background-size: 300% 300%;
+	animation: colors 15s ease infinite;
+	font-size: 25px;
+}
+
+
+.titulo{
+	color: #fff;
+	width: 100%;
+	box-shadow: 1px 1px 1px 2px rgba(0,0, 0, 0.5);
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+
+
+/* animacao da passagem de cor */
+
+@keyframes colors{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+.subtitulo{
+	color: rgba(255, 215, 0, 1.0);
+	font-size: 40px;
+}
+/*configuração do cartao*/ 
+.cartao{
+	width: 300px;
+	height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	background: linear-gradient(45deg,rgba(79, 79, 79, 0.5), rgba(255, 215, 0, 1.0));
+	background-size: 100% 100%;
+	backdrop-filter:  blur(100px);
+	opacity: 0.5;
+	animation: colors 5s ease infinite;
+	font-size: 20px;
+	font-family: Arial;
+	display: block;
+	padding-left: 20px ;
+	box-shadow: 2px 3px 1px 2px rgba(0,0, 0, 0.5);
+	transition: 2s ease;
+	 letter-spacing: 2px;
+	
+}
+.cartao:hover{
+	opacity: 1;
+	cursor: pointer;
+	transition: 2s ease;
+	letter-spacing: 4px;
+
+}
+.chip{
+	position: relative;
+	border-radius: 8px;
+	width: 60px;
+	margin: auto;
+}
+
+/* bandeiras alelo */
+.amarelo{
+	width: 40px;
+	height: 40px;
+	background-color: #FFA500;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	opacity: 0.9;
+	right: 5px;
+}
+.vermelho{
+	width: 40px;
+	height: 40px;
+	background-color: #FF0000	;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	margin: auto;
+	right: 25px;
+	opacity: 0.9;
+}
+
+
+/* animacao feito para voce */ 
+
+.container{
+	display: inline-block;
+	position: relative;
+	top: 25px;
+
+}
+
+.container .estatico{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 900;
+	width: 100%;
+
+	
+}
+
+.container .dinamico{
+	margin-left:2px;
+	overflow: hidden;
+	height: 150px;
+	line-height: 150px;
+	width: 100%;
+}
+.dinamico li{
+	color: rgba(255, 215, 0, 0.7);
+	list-style: none;
+	font-size: 60px;
+	font-weight: 900;
+	left: 0px;
+	position: relative;
+	top: 0;
+	animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide{
+	100%{
+		top: -600px;
+	}
+}
+.dinamico li span::after{
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+}
+.dinamico li span{
+	position: relative;
+}
+ /* menu fixo no topo com animacao ao passar o mouse*/
+ul {padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;}
+
+	html {scroll-behavior: smooth;}
+
+.menufixo {
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 10px;
+	left: 20px;
+	}
+
+.menufixo nav ul li a:hover{
+		color: rgba(255, 215, 0, 0.7);
+
+	}
+
+	header nav ul {list-style: none;
+	text-align: center;}
+
+	header nav ul li {display: inline;}
+
+	header nav ul li a { text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-famiy: arial;
+	font-size: 1em;
+	padding: 10px 10px;
+	display: inline-block;
+	position: relative;}
+
+	header nav ul li a :hover { color: #684984;}
+
+	/*section { 
+	width: 100%;
+	height:400px;
+	color: #fff;}*/
+
+/* animacao das tabs que aparece ao passar o mouse */ 
+	.Tabs {
+	overflow:  hidden;
+
+	
+	background-size: 100% 100%;
+	width: 80%;
+	color: #000;
+	position: relative;
+	top: 50px;
+	display: block;
+	
+	border-radius: 5px;
+	}
+
+}
+.conteudoTab{ 
+display: none;
+padding: 20px 30px;
+border: 1px solid #ccc; 
+position: absolute;
+transition: 4s ease;
+}
+
+.fecharTab { 
+float: right;
+cursor: pointer; 
+font-size: 30px;
+transition: 5s ease;
+color: rgba(255, 215, 0, 0.7);
+transition: 2s ease;
+}
+
+
+/* botoes de entrar na conta */ 
+.conta1{
+	width: 20%;
+	height: 20px;
+	background-color: rgba(79, 79, 79, 0.5);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.conta1:hover{
+background-color: rgba(0, 0, 0, 0.3);
+margin-left: 5px;
+transition: 2s ease;
+font-style: italic;
+font-size: 15px;
+color: #fff;
+text-align: center;
+margin: auto;
+}
+
+
+.letras{
+	color: #fff;
+	text-align: center;
+
+} 
+/* configuração dos links do contato */ 
+.links{
+	text-decoration: none;
+	color: #fff;
+	align-content: space-around;
+}
+.links:hover{background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+/* card com informacoes do cartao */ 
+
+.colunacartao{
+float: left;
+justify-content: center;
+padding: 10px 5px;
+display:table;
+margin: 0 auto;
+text-align: center;
+flex-direction: row;
+flex-wrap: nowrap;
+cursor: pointer;
+display: flex;
+max-width: 300px;
+transition: 2s ease;
+position: relative;
+}
+
+.colunacartao:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: 1s ease;
+}
+
+
+.cartao1
+{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+padding: 10px;}
+
+.textocartao{
+	padding: 0 16px;
+	padding-bottom: 5px;
+	color: #fff;
+
+}
+
+.textocartao::after, .linhacartao::after{
+	content: " ";
+	clear: both;
+	display: inline;
+
+}
+.titulo1{
+	color: rgba(255, 215, 0, 0.7);
+	font-size: 18px;
+}
+section{
+	display: block;
+}
+header{
+	display: block;
+
+}
+.botao{font-size: 16px;
+cursor: pointer;
+background-color: rgba(255, 215, 0, 0.2);
+border-radius: 5px;
+transition: 2s ease;
+color: #fff;
+}
+.botao:hover{
+transform: translate(15px);
+transition: 2s ease;
+}
+}
+
+/* Configuração dos  contatos */ 
+
+.imgc{
+		border-radius: 70%;
+	}
+
+.conteudo3{
+	cursor: pointer;
+	font-size: 25px;
+	display: block;
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Formulario abrir conta */ 
+
+	
+}
+.btncontinuar{
+	width: 50%;
+	height: 40px;
+	background-color: rgba(79, 79, 79, 0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 2s ease;
+}
+.btncontinuar:hover{
+		background-color: rgba(255, 215, 0, 0.7);
+		transition: 2s ease;
+}
+
+.box{
+            color: white;
+            position: flex;
+           
+            padding: 15px;
+            border-radius: 15px;
+            width: 80%;
+            height: 50%;
+            
+        }
+        fieldset{
+            border: 2px solid rgba(255, 215, 0, 0.5);
+        }
+        legend{
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            text-align: center;
+            background-color:rgba(255, 215, 0, 0.5);
+            border-radius: 8px;
+            color: #fff;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 20px;
+            color: rgba(255, 215, 0, 0.5);
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background: linear-gradient(45deg,rgba(79, 79, 79, 0.5), rgba(255, 215, 0, 0.5));
+				background-size: 100% 100%; ;
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 5s ease;
+        }
+        #submit:hover{
+            background: linear-gradient(45deg,rgba(79, 79, 79, 1), rgba(255, 215, 0, 1));
+            transition: 5s ease;
+        }
+
+      .concordar{
+      	font-size: 15px;
+      	text-align: center;
+      }
+
+      .dados{
+      	position: absolute;
+      	padding: 15px;
+      	color: #fff;
+      }
+
+      /* sessao do Emprestimo*/
+
+	.Emprestimo{
+	border: 1px solid #fff;
+	text-align: left;
+	position: relative;
+	padding-left: 15px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+
+}
+/* Texto no final da pagina */ 
+.bottom{
+	width: 100%;
+	
+	 position: relative;
+	 font-size: 18px;
+	 margin-bottom: 5px;}
+
